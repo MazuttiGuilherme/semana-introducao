@@ -1,0 +1,158 @@
+{
+  "groups": [
+    {
+      "id": "6218e8b99550033f86bda1d0",
+      "name": "Café da Manhã",
+      "products": [
+        {
+          "id": "6218edd9a7bd080d0806a57e",
+          "name": "Café-Americano",
+          "image": "assets/images/cafe-americano.jpg",
+          "description": "Tradicional café da manhã no estilo americano; com panquecas, cereais, ovos, bacon, café e suco.",
+          "price": 50.9
+        },
+        {
+          "id": "6218ede7a3e30e98a1240219",
+          "name": "Café-Colônial",
+          "image": "assets/images/pao-de-batata.jpg",
+          "description": "Delicioso café completo com bolo, queijos, presunto, frutas, pães variados e suco.",
+          "price": 50.9
+        }
+      ]
+    },
+    {
+      "id": "5973f204-1870-4060-9698-36bd6bd905bf",
+      "name": "Cardápio",
+      "products": [
+        {
+          "id": "6218e8b99550033f86bda1d0",
+          "name": "Joelho",
+          "image": "assets/images/joelho.jpg",
+          "description": "Deliciosamente macio e saboroso com diversos recheios.",
+          "price": 7
+        },
+        {
+          "id": "6218eb547d46bb8c19491b3b",
+          "name": "Pão de Batata",
+          "image": "assets/images/pao-de-batata.jpg",
+          "description": "Uma delícia recheada com o mais puro queijo da Serra da Canastra.",
+          "price": 7
+        },
+        {
+          "id": "6218eb6a2dbe11c8a3f70fc7",
+          "name": "Croissant",
+          "image": "assets/images/croissant.jpg",
+          "description": "Legítima receita francesa para satisfazer o seu paladar.",
+          "price": 8
+        },
+        {
+          "id": "6218eb7ab13d195d475e05cd",
+          "name": "Açaí na Tijela",
+          "image": "assets/images/acai.jpg",
+          "description": "Saboroso açaí servido puro ou com complementos a sua escolha.",
+          "price": 15.9
+        },
+        {
+          "id": "6218eb88f52de2342950cc99",
+          "name": "Misto Quente",
+          "image": "assets/images/misto-quente.jpg",
+          "description": "Quentinho com queijo puxa-puxa e um sabor especial.",
+          "price": 10
+        },
+        {
+          "id": "6218eb94735339c2f8a4a71c",
+          "name": "Sucos",
+          "image": "assets/images/sucos.jpg",
+          "description": "Feitoas na hora com frutas sabvorosas e refrescantes.",
+          "price": 10
+        },
+        {
+          "id": "6218ebba12f387f3c957d9fd",
+          "name": "Wafles",
+          "image": "assets/images/wafles.jpg",
+          "description": "Macios e saborosos com acompanhamentos a sua escolha.",
+          "price": 18
+        },
+        {
+          "id": "6218ebc7995841290d812041",
+          "name": "Club Sandwich",
+          "image": "assets/images/club sandwich.jfif",
+          "description": "Receita tradicional de um dos sandwiches mais conhecidos no mundo.",
+          "price": 20.9
+        },
+        {
+          "id": "6218ebd1f9cbb57ac4dd6515",
+          "name": "Hamburguers",
+          "image": "assets/images/hamburguer.jpg",
+          "description": "Dois hamburgues, alface, queijo, molho especial, cebola, pickels num pão com gergelim.",
+          "price": 22.9
+        },
+        {
+          "id": "6218ebdc4f6ccec8705a0d92",
+          "name": "Pizza",
+          "image": "assets/images/calabresa.jpg",
+          "description": "Massa artesanal, muçarela, linguiça calabresa e cebola.",
+          "price": 49.9
+        },
+        {
+          "id": "6218ebe63571c53ba1d6bc60",
+          "name": "Pão na Chapa",
+          "image": "assets/images/PaoChapa.jpeg",
+          "description": "Pão, manteiga, chapa e o nosso atendimento.",
+          "price": 3.9
+        },
+        {
+          "id": "6218ebf04e994bb2dd998ca5",
+          "name": "Pingado",
+          "image": "assets/images/pingado.jpg",
+          "description": "Ótimo para começar o dia.",
+          "price": 5
+        },
+        {
+          "id": "6218ebfd16fc238d5ebdc586",
+          "name": "Cafezinho",
+          "image": "assets/images/caffè.jfif",
+          "description": "Fresquinho e saboroso para dar aquele levante.",
+          "price": 4.9
+        },
+        {
+          "id": "6218ec07299b5260c423e0b4",
+          "name": "Coxinha",
+          "image": "assets/images/coxinha.png",
+          "description": "Recheio molhadinho e muito bem temperada.",
+          "price": 6.9
+        }
+      ]
+    },
+    {
+      "id": "5973f204-1870-4060-9698-36bd6bd905bf",
+      "name": "Bebidas",
+      "products": [
+        {
+          "id": "6218ec1370033c5b23b496dd",
+          "name": "Coca-Cola",
+          "image": "assets/images/bebidas-coca-cola.jpg",
+          "price": 12.5
+        },
+        {
+          "id": "6218ec1f4d043512d202d5f5",
+          "name": "Fanta Laranja",
+          "image": "assets/images/bebidas-fanta.jpg",
+          "price": 12.5
+        },
+        {
+          "id": "6218ec2a1098f5ac60d4610d",
+          "name": "Guaraná",
+          "image": "assets/images/bebidas-kuat.jpg",
+          "price": 12.5
+        },
+        {
+          "id": "6218ec367fdd40ee574d33ef",
+          "name": "Mate",
+          "image": "assets/images/bebidas-mate-couro.jpg",
+          "price": 12.5
+        }
+      ]
+    }
+  ]
+}
