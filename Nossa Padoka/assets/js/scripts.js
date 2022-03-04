@@ -61,7 +61,7 @@ const getSectionElement = (group) => {
 };
 fetchProducts();
 
-const productsCart = [];
+let productsCart = [];
 const addToCart = (newProduct) => {
   const productIndex = productsCart.findIndex(
     (item) => item.id === newProduct.id
@@ -76,7 +76,7 @@ const addToCart = (newProduct) => {
   }
   handleCartUpdate();
 };
-const removeOfCart = (id) => {
+const removeOfCart = id => {
   productsCart = productsCart.filter((product) => {
     if (product.id === id) {
       return false;
@@ -98,6 +98,7 @@ const updateItemQty = (id, newQty) => {
   productsCart[productIndex].qty = parseInt(newQty);
   handleCartUpdate();
 };
+
 const handleCartUpdate = () => {
   const emptyCartEl = document.querySelector("#empty-cart");
   const cartWithProductsEl = document.querySelector("#cart-with-products");
