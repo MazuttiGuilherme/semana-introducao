@@ -291,6 +291,9 @@ h3, .h3 {
   justify-content: center;
   align-items: center;
 }
+#empty-cart.empty-cart-show{
+  display: flex;
+}
 #empty-cart .fa-bag-shopping {
   color: var(--main-color);
   font-size: 154px;
@@ -300,6 +303,9 @@ h3, .h3 {
 #cart-with-products {
   overflow: auto;
   display: none;
+}
+#cart-with-products.cart-with-products-show {
+  display: block;
 }
 #cart-with-products ul {
   list-style: none;
