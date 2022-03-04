@@ -79,6 +79,7 @@ const addToCart = (newProduct) => {
 const handleCartUpdate = () => {
   const emptyCartEl = document.querySelector("#empty-cart");
   const cartWithProductsEl = document.querySelector("#cart-with-products");
+  const cartProductsListEl = cartWithProductsEl.querySelector('ul')
   if (productsCart.length > 0) {
     //Atualiza a medalha
     const cartBadgeEl = document.querySelector(".btn-cart-badge");
@@ -92,9 +93,26 @@ const handleCartUpdate = () => {
     
     cartWithProductsEl.classList.add("cart-with-products-show");
     emptyCartEl.classList.remove('empty-cart-show');
+    //Mostrar produtos do carrinho de forma dinâmica na tela
+    cartProductsListEl.innerHTML = '';
+    productsCart.forEach((product) =>{
+      const listItemEl = document.createElement('li')
+      listItemEl.innerHTML = `<img src="${product.image}"
+      alt="${product.name}" width="70" height="70"/>
+      <div>
+        <p class="h3">${product.name}</p>
+        <p class="price">${product.price.toLocaleString('pt-br', {minimumFractionDigits: 2})}</p>
+      </div>
+      <input class="form-input" type="number" value="${product.qty}" />
+      <button>
+        <i class="fa-solid fa-trash-can"></i>
+      </button>
+      `
+      cartProductsListEl.appendChild(listItemEl)
+    })
   } else {
     //Mostra Carrrinho Vazio
     emptyCartEl.classList.add("#empty-cart-show");
-    cartWithProductsEl.classList.remove('cart-with-products-show')
+    cartWithProductsEl.classList.remove('cart-with-products-show');
   }
 };
