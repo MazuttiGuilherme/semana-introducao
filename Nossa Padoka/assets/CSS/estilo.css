@@ -61,17 +61,16 @@ body {
   width: 20px;
   height: 20px;
   font-size: 12px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background: #FFF;
 }
-@media (min-width: 992px) {
-  .logo {
-    height: 120px;
-    width: auto;
-  }
+
+.btn-cart-badge-show {
+  display: flex;
 }
+
 
 /* CONTAINER */
 .container {
@@ -88,6 +87,12 @@ body {
 @media (min-width: 768px) {
   .container {
     width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .logo {
+    height: 120px;
+    width: auto;
   }
 }
 @media (min-width: 992px) {
