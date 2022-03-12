@@ -96,7 +96,7 @@ const updateItemQty = (id, newQty) => {
     return false;
   });
   productsCart[productIndex].qty = parseInt(newQty);
-  handleCartUpdate();
+  handleCartUpdate(false);
 };
 
 const handleCartUpdate = (renderItens = true) => {
