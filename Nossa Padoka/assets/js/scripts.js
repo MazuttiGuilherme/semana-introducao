@@ -1,5 +1,6 @@
 const cartSidebarEl = document.querySelector(".cart-sidebar");
-function openSidebar() {
+function openSidebar(event) {
+  event.stopPropagation();
   cartSidebarEl.classList.add("cart-sidebar-open");
 }
 function closeSidebar() {
@@ -10,6 +11,10 @@ const btnCartEl = document.getElementById("btn-cart");
 btnCartEl.addEventListener("click", openSidebar);
 const btnCloseCartEl = document.querySelector("#btn-close-cart");
 btnCloseCartEl.addEventListener("click", closeSidebar);
+document.addEventListener("click", closeSidebar);
+cartSidebarEl.addEventListener('click', (event) => {
+  event.stopPropagation();
+})
 
 const fetchProducts = () => {
   const groupsRootEl = document.querySelector("#groups-root");
