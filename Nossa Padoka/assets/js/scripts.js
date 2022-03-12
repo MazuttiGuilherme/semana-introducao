@@ -89,16 +89,23 @@ const removeOfCart = (id) => {
   }
 };
 const updateItemQty = (id, newQty) => {
+  const newQtynumber = parseInt(newQty)
+  if (isNaN(newQtynumber)) {
+    return
+  }
+  if (newQtynumber > 0){
   const productIndex = productsCart.findIndex((product) => {
     if (product.id === id) {
       return true;
     }
     return false;
   });
-  productsCart[productIndex].qty = parseInt(newQty);
+  productsCart[productIndex].qty = newQtynumber;
   handleCartUpdate(false);
-};
-
+}else {
+  removeOfCart(id)
+}
+}
 const handleCartUpdate = (renderItens = true) => {
   // Salva carrinho no localstorage
   const productsCartString = JSON.stringify(productsCart);
