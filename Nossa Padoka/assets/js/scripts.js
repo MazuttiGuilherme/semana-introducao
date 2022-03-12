@@ -62,6 +62,10 @@ const getSectionElement = (group) => {
 fetchProducts();
 
 let productsCart = [];
+const savedProducts = localStorage.getItem('productsCart')
+if(savedProducts){
+productsCart = JSON.parse(savedProducts)
+}
 const addToCart = (newProduct) => {
   const productIndex = productsCart.findIndex(
     (item) => item.id === newProduct.id
@@ -110,6 +114,7 @@ const handleCartUpdate = (renderItens = true) => {
   // Salva carrinho no localstorage
   const productsCartString = JSON.stringify(productsCart);
   localStorage.setItem("productsCart", productsCartString);
+  
   const emptyCartEl = document.querySelector("#empty-cart");
   const cartWithProductsEl = document.querySelector("#cart-with-products");
   const cartProductsListEl = cartWithProductsEl.querySelector("ul");
@@ -181,6 +186,7 @@ const handleCartUpdate = (renderItens = true) => {
     cartWithProductsEl.classList.remove("cart-with-products-show");
   }
 };
+
 handleCartUpdate();
 // Atualiza carrinho se outra aba
 window.addEventListener("storage", (event) => {
