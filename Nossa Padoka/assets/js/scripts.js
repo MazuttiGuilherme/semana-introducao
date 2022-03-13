@@ -204,3 +204,23 @@ window.addEventListener("storage", (event) => {
     handleCartUpdate();
   }
 });
+
+const formCheckoutEl= document.querySelector('.form-checkout')
+formCheckoutEl?.addEventListener('submit', (event) => {
+  event.preventDefault()
+  let text = 'Confira o pedido abaixo:\n----------------------------------------------\n\n'
+  let total = 0;
+  productsCart.forEach(product => {
+    text += `*${product.qty}x ${product.name}* - ${product.price.toLocaleString('pt-br', {style:'currency', currency: 'BRL'})}\n`
+    total += product.price * product.qty
+  });
+  text += '\n*Taxa de entrega:* A combinar\n'
+  text += `*Total: ${total.toLocaleString ('pt-br', {style:'currency', currency: 'BRL'})}*`
+  text += '\n----------------------------------------------\n\n'
+  text += `*Nome do cliente*\n`
+ 
+  //*Nome do cliente*\n
+//(21) 99999-9999\n\n
+ // Rua X, 320, Ipanema, Rio de Janeiro`
+  window.open(`https://api.whatsapp.com/send?phone=5521975412345&text= ${encodeURI(text)}`, '_blank')
+});
