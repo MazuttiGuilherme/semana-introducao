@@ -16,10 +16,10 @@ cartSidebarEl.addEventListener('click', (event) => {
   event.stopPropagation();
 })
 const btnAddMore = document.querySelector('#btn-add-more')
-btnAddMore.addEventListener('click', closeSidebar)
+btnAddMore?.addEventListener('click', closeSidebar)
 
+const groupsRootEl = document.querySelector("#groups-root");
 const fetchProducts = () => {
-  const groupsRootEl = document.querySelector("#groups-root");
   fetch("/products.json")
     .then((res) => res.json())
     .then((data) => {
@@ -66,7 +66,9 @@ const getSectionElement = (group) => {
   });
   return sectionEl;
 };
+if(groupsRootEl){
 fetchProducts();
+}
 
 let productsCart = [];
 const savedProducts = localStorage.getItem('productsCart')
